@@ -1,0 +1,22 @@
+.button  {
+  padding: 10px 18px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 1.1rem;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  &__outlined {
+    background-color: transparent;
+    color: #6F38C5;
+    border: 2px solid #EEEEEE;
+    outline: none;
+  }
+
+  &__contained {
+    background-color: #6F38C5;
+    color: white;
+  }
+
+}

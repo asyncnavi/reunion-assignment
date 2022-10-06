@@ -1,0 +1,86 @@
+@import "../design/styles/index";
+
+.item-card {
+  @include flex(column, center, flex-start, no-wrap);
+  width: 100%;
+  max-width: 320px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+
+  .divider {
+    width: 90%;
+    height: 2px;
+    background-color: $secondary-color;
+    margin: 10px 0;
+    @include flex(row,center,center,no-wrap);
+  }
+
+  &__top {
+    img {
+      width: 320px;
+      height: 200px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+
+    }
+  }
+
+  &__bottom {
+    padding: 20px 10px;
+    position: relative;
+
+    &_like {
+      position: absolute;
+      right: 50px;
+
+      svg {
+        color: $primary-color;
+      }
+    }
+
+    h2 {
+      margin-top: 16px;
+    }
+
+    p {
+      color: $light-text-color;
+      margin-top: 16px;
+
+    }
+
+    &_price {
+
+      @include flex(row,flex-start,center,no-wrap);
+
+
+      h4 {
+        color: $primary-color;
+        font-size: 1.6rem;
+      }
+
+      span {
+        color: $light-text-color;
+      }
+
+
+    }
+
+    &_specification {
+      @include flex(row,center,center,no-wrap);
+      color: $light-text-color;
+
+      span {
+        @include flex(row,center,center,no-wrap);
+        padding: 10px;
+        font-size: .7rem;
+
+        svg {
+          color: $primary-color;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

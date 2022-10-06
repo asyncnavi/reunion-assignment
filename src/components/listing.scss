@@ -1,0 +1,54 @@
+@import "../design/styles/index";
+
+.listing-container {
+  max-width: 1600px;
+  @include flex(column, center, center, wrap);
+
+  width: 100%;
+}
+
+.cards-container {
+
+  @include flex(row, center, center, wrap);
+
+}
+
+.search-card {
+  background-color: white;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 100px;
+  width: max-content;
+
+
+  &__input-group {
+    @include flex(row, center, center, wrap);
+    
+    
+    @media screen and (max-width: 798px) {
+      @include flex(column, center, center, wrap);
+
+    }
+
+
+    & > div {
+      padding: 10px 20px;
+      width: 100%;
+      max-width: 320px;
+      min-width: 320px;
+    }
+
+    & > div:not(:last-child) {
+      border-right: 1px solid #EEEEEE;
+
+    }
+  }
+}
+
+.e-select {
+  label {
+    color: #8b8181;
+    margin-bottom: 20px;
+  }
+}

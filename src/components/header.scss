@@ -1,0 +1,67 @@
+@import "../design/styles/index";
+
+
+.header {
+
+  @include flex(row,center,center,no-wrap);
+  width: 100%;
+  height: 80px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 3;
+  position: sticky;
+  top: 0;
+  &__inner {
+    @include flex(row,space-between,center,no-wrap);
+    width: 100%;
+
+    padding: 5px 16px;
+
+    &_left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40px;
+
+        @media screen and (max-width: 998px) {
+          display: none;
+        }
+        li {
+          list-style: none;
+          padding: 10px 20px;
+          cursor: pointer;
+          border-radius: 10px;
+
+          &:hover {
+            color: $primary-color;
+            background-color: $secondary-color;
+          }
+        }
+      }
+
+      &-logo {
+        span {
+          font-size: 1.6rem;
+          font-weight: bold;
+          font-style: italic;
+        }
+        svg {
+          color: $primary-color;
+        }
+      }
+    }
+
+    &_actions {
+      @include flex(row,center,center,no-wrap);
+    }
+
+
+  }
+
+}
