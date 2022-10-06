@@ -8,7 +8,7 @@ const App = () => {
       <div>
           <Header />
           <main className="main-section">
-                <h2>Search Properties to rent :</h2>
+                <h2>Search Properties to rent</h2>
                 <PropertyListing/>
           </main>
       </div>

@@ -1,3 +1,5 @@
+@import "../design/styles/index";
+
 .button  {
   padding: 10px 18px;
   border-radius: 5px;
@@ -9,14 +11,22 @@
   border: none;
   &__outlined {
     background-color: transparent;
-    color: #6F38C5;
-    border: 2px solid #EEEEEE;
+    color: $primary-color;
+    border: 2px solid $secondary-color;
     outline: none;
+    transition: all .3s ease-in-out;
+    &:hover {
+      border-color: $primary-color;
+    }
   }
 
   &__contained {
     background-color: #6F38C5;
     color: white;
+
+    &:hover {
+       opacity: .7;
+    }
   }
 
 }

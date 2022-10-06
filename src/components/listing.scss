@@ -8,7 +8,7 @@
 }
 
 .cards-container {
-
+  margin-top: 40px;
   @include flex(row, center, center, wrap);
 
 }
@@ -50,5 +50,6 @@
   label {
     color: #8b8181;
     margin-bottom: 20px;
+
   }
 }

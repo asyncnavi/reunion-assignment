@@ -6,9 +6,7 @@ import {AiOutlineHeart} from 'react-icons/ai';
 import "./item-card.scss"
 
 
-const ItemCard = ({
-                      property
-                  }) => {
+const ItemCard = ({property}) => {
     const {
         name,
         imageUrl,
@@ -42,13 +40,13 @@ const ItemCard = ({
                              <BiBed size={18}/>
                             {numberOfBeds} Beds
                         </span>
-                        <span>
+                    <span>
                              <MdOutlineBathroom size={18}/>
-                             {numberOfBathrooms} Bathrooms
+                        {numberOfBathrooms} Bathrooms
                         </span>
-                        <span>
+                    <span>
                              <TbDimensions size={18}/>
-                            {size}
+                        {size}
                         </span>
                 </div>
             </div>
